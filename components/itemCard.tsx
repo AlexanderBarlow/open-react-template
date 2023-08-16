@@ -255,7 +255,7 @@ export default function itemCard() {
           <div className="p-4 border-2 border-gray-200 border-solid rounded-lg dark:border-gray-700 mb-2">
             <div className="grid grid-cols-3 gap-4 mb-4">
               {posts.map((item: any) => (
-                <div className="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800" key={item.id}>{item.shortName}</div>
+                <div className="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800 hover:bg-indigo-950" key={item.id}>{item.shortName}</div>
               ))}
             </div>
           </div>
