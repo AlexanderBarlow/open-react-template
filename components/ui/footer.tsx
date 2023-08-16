@@ -20,7 +20,7 @@ export default function Footer() {
                   </svg>
                 </Link>
               </div>
-              <div className="text-gray-400">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>
+              <div className="text-gray-400">This tarkov wiki is a quick guide for new and experienced players alike. Please join the discord and let us know what else you'd like to see!</div>
             </div>
 
             {/* 2nd, 3rd and 4th blocks */}
@@ -31,13 +31,7 @@ export default function Footer() {
                 <h6 className="text-gray-200 font-medium mb-1">Products</h6>
                 <ul>
                   <li className="mb-1">
-                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Web Studio</Link>
-                  </li>
-                  <li className="mb-1">
-                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">DynamicBox Flex</Link>
-                  </li>
-                  <li className="mb-1">
-                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Programming Forms</Link>
+                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Escape From Tarkov Wiki</Link>
                   </li>
                 </ul>
               </div>
@@ -47,19 +41,10 @@ export default function Footer() {
                 <h6 className="text-gray-200 font-medium mb-1">Resources</h6>
                 <ul>
                   <li className="mb-1">
-                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Nostrud exercitation</Link>
+                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Tarkov API</Link>
                   </li>
                   <li className="mb-1">
-                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Visual mockups</Link>
-                  </li>
-                  <li className="mb-1">
-                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Nostrud exercitation</Link>
-                  </li>
-                  <li className="mb-1">
-                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Visual mockups</Link>
-                  </li>
-                  <li className="mb-1">
-                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Nostrud exercitation</Link>
+                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">TailWind</Link>
                   </li>
                 </ul>
               </div>
@@ -69,19 +54,7 @@ export default function Footer() {
                 <h6 className="text-gray-200 font-medium mb-1">Company</h6>
                 <ul>
                   <li className="mb-1">
-                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Consectetur adipiscing</Link>
-                  </li>
-                  <li className="mb-1">
-                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Labore et dolore</Link>
-                  </li>
-                  <li className="mb-1">
-                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Consectetur adipiscing</Link>
-                  </li>
-                  <li className="mb-1">
-                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Labore et dolore</Link>
-                  </li>
-                  <li className="mb-1">
-                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Consectetur adipiscing</Link>
+                    <Link href="/" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Self Start Up</Link>
                   </li>
                 </ul>
               </div>

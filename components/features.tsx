@@ -21,7 +21,7 @@ export default function Features() {
                 <path className="stroke-current text-purple-300" d="M43 42h-9M43 37h-9" strokeLinecap="square" strokeWidth="2" />
               </svg>
               <h4 className="h4 mb-2">Weapons</h4>
-              <p className="text-lg text-gray-400 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+              <p className="text-lg text-gray-400 text-center">If its in the game we have it. Visit our weapons page to see a list of all the categories of guns. From there you can see thing such as descriptions and average sale price over the last 24 hours.</p>
             </div>
 
             {/* 2nd item */}
@@ -32,7 +32,7 @@ export default function Features() {
                 <path className="stroke-current text-purple-300" d="M26 28h12M26 32h12M26 36h5" strokeWidth="2" strokeLinecap="square" />
               </svg>
               <h4 className="h4 mb-2">Quests</h4>
-              <p className="text-lg text-gray-400 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+              <p className="text-lg text-gray-400 text-center">Quests are a big part of the game. The attribute to unlocking the best loot and leveling up. This is why we have every quest on in the game and the items needed to complete them.</p>
             </div>
 
             {/* 3rd item */}
@@ -46,7 +46,7 @@ export default function Features() {
                 </g>
               </svg>
               <h4 className="h4 mb-2">Ammo</h4>
-              <p className="text-lg text-gray-400 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+              <p className="text-lg text-gray-400 text-center">Ammo is something that can easily confuse new players. There are many types and stats that go along with that. Our ammo page makes it easy, listing the type and each bullet for that type. There you can find the important stats.</p>
             </div>
 
             
