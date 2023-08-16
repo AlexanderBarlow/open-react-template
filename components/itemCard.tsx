@@ -253,8 +253,8 @@ export default function itemCard() {
           </div>
         </aside>
 
-        <div className="p-4 sm:ml-64">
-          <div className="p-4 border-2 border-gray-200 border-solid rounded-lg dark:border-gray-700 mb-2 h-full">
+        <div className="flex p-4 sm:ml-64 justify-center">
+          <div className="p-4 border-2 border-gray-200 border-solid rounded-lg dark:border-gray-700 mb-2 h-full ">
             <div className="grid grid-cols-3 gap-4 mb-4">
               {posts.map((item: any) => (
               
@@ -271,9 +271,10 @@ export default function itemCard() {
                         </h5>
                       </a>
                       <div className="flex items-center justify-between">
-                        <span className="text-3xl font-bold text-gray-900 dark:text-white">
-                          {item.avg24hPrice}
+                        <span className="text-2xl font-bold text-gray-900 dark:text-white">
+                        ₽{item.avg24hPrice}
                         </span>
+                        
                         <a
                           href="#"
                           className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
