@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Home - Open PRO',
-  description: 'Page description',
+  title: 'Escape From Tarkov Wiki',
+  description: 'Landing Page',
 }
 
 import Hero from '@/components/hero'

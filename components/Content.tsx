@@ -90,26 +90,7 @@ export default function Content() {
 
 
   return (
-      <Card style={{background: '#020617', alignContent: 'center', justifyContent: 'center',}}>
-      {posts.map((item: any) => (
-        <CardActionArea key={item.id}> 
-        <CardMedia
-        component='img'
-        style={{height: "50%", width: "50%"}}
-        image={item.image512pxLink}
-        alt={item.shortName}
-        />
-
-        <CardContent >
-          <Typography gutterBottom variant="h5" component="div" style={{color: '#FFF', alignContent: 'center', justifyContent: 'center'}}>
-            {item.shortName}
-          </Typography>
-          <Typography variant="body2" color="text.secondary" style={{color: '#FFF', alignContent: 'center', justifyContent: 'center'}}>
-            {item.avg24hPrice}RUB
-          </Typography>
-          </CardContent>
-        </CardActionArea>
-      ))}
-      </Card>
+      <>
+      </>
   );
 }
