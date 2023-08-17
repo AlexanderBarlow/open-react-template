@@ -18,28 +18,38 @@ const drawerWidth = 256;
 
 export default function itemCard() {
   const [posts, setPosts]: any = useState([]);
+  const [itemName, setName]: any = useState("Assault Rifle")
 
-  const query = JSON.stringify({
-    query: `{
-      items(name: "Assault Rifle") {
+ 
+  // Set the desired item name dynamically
+
+
+
+const query = JSON.stringify({
+    query: `
+    query GetItem($itemName: String!) {
+      items(name: $itemName) {
         id
         shortName
         image512pxLink
-      sellFor {
-        price
-        currency
-        priceRUB
-        source
-      }
-      avg24hPrice
-      description
-       category {
-        id
-        name
-       }
+        sellFor {
+          price
+          currency
+          priceRUB
+          source
+        }
+        avg24hPrice
+        description
+        category {
+          id
+          name
+        }
       }
     }`,
-  });
+    variables: {
+        itemName: itemName
+    }
+});
 
   const options = {
     method: "POST",
@@ -72,7 +82,7 @@ export default function itemCard() {
 
     request.write(query);
     request.end();
-  }, []);
+  }, [itemName]);
 
   useEffect(() => {
     if (posts.length > 0) {
@@ -119,7 +129,6 @@ export default function itemCard() {
             <ul className="space-y-2 font-medium">
               <li>
                 <a
-                  href="#"
                   className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                 >
                   <svg
@@ -137,6 +146,7 @@ export default function itemCard() {
               </li>
               <li>
                 <a
+                onClick={() => setName("Assault Rifle")}
                   href="#"
                   className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                 >
@@ -156,6 +166,7 @@ export default function itemCard() {
               </li>
               <li>
                 <a
+                onClick={() => setName("Sub")}
                   href="#"
                   className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                 >
@@ -175,6 +186,7 @@ export default function itemCard() {
               </li>
               <li>
                 <a
+                onClick={() => setName(" carbine")}
                   href="#"
                   className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                 >
@@ -192,6 +204,7 @@ export default function itemCard() {
               </li>
               <li>
                 <a
+                onClick={() => setName("pistol")}
                   href="#"
                   className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                 >
@@ -209,6 +222,7 @@ export default function itemCard() {
               </li>
               <li>
                 <a
+                onClick={() => setName("sniper")}
                   href="#"
                   className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                 >
@@ -232,6 +246,7 @@ export default function itemCard() {
               </li>
               <li>
                 <a
+                onClick={() => setName("marksman")}
                   href="#"
                   className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                 >
@@ -257,7 +272,7 @@ export default function itemCard() {
 
         <div className="flex p-4 sm:ml-64 justify-center">
           <div className="p-4 border-2 border-gray-200 border-solid rounded-lg dark:border-gray-700 mb-2 h-full ">
-            <div className="grid grid-cols-3 gap-4 mb-4">
+            <div className="grid grid-cols-1 gap-4 mb-4 lg:grid-cols-3">
               {posts.map((item: any) => (
                 <div
                   className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
