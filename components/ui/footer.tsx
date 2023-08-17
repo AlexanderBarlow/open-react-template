@@ -78,7 +78,7 @@ export default function Footer() {
                       href="/"
                       className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out"
                     >
-                      Self Start Up
+                      Personal Development Project
                     </Link>
                   </li>
                 </ul>
